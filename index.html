@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comparativa de Agentes IA — Landing Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="portada.css">
+</head>
+<body>
+  <div class="portada">
+    <header class="portada__header">
+      <span class="portada__badge">Trabajo Práctico — Prompt Engineering</span>
+      <h1>Comparativa de Agentes de Desarrollo</h1>
+      <p class="portada__subtitle">
+        Mismo prompt inicial, dos agentes autónomos. Selecciona una opción para explorar el proyecto.
+      </p>
+    </header>
+
+    <nav class="portada__cards" aria-label="Accesos del proyecto">
+      <a href="prompt.html" class="card card--prompt">
+        <span class="card__number">01</span>
+        <h2>Prompt Utilizado</h2>
+        <p>Texto plano del prompt de alta precisión diseñado según guías oficiales de Anthropic y OpenAI.</p>
+        <span class="card__link">Ver prompt →</span>
+      </a>
+
+      <a href="agent1-cursor/" class="card card--agent1">
+        <span class="card__number">02</span>
+        <h2>Agente 1 — Cursor</h2>
+        <p>Landing Page generada autónomamente por <strong>Cursor Agent</strong> con el modelo <strong>Composer</strong>.</p>
+        <span class="card__link">Ver landing →</span>
+      </a>
+
+      <a href="agent2-codex/" class="card card--agent2">
+        <span class="card__number">03</span>
+        <h2>Agente 2 — Codex (OpenAI)</h2>
+        <p>Landing Page generada autónomamente por <strong>Codex</strong> con el modelo <strong>gpt-5.3-codex</strong>.</p>
+        <span class="card__link">Ver landing →</span>
+      </a>
+    </nav>
+
+    <footer class="portada__footer">
+      <p>Lumina Studio — Proyecto de comparación de capacidad de resolución autónoma</p>
+    </footer>
+  </div>
+</body>
+</html>

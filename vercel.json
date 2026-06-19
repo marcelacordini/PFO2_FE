@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "**/*", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/agent1-cursor", "dest": "/agent1-cursor/index.html" },
+    { "src": "/agent2-codex", "dest": "/agent2-codex/index.html" },
+    { "src": "/prompt", "dest": "/prompt.html" },
+    { "src": "/(.*)", "dest": "/$1" }
+  ]
+}
