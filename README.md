@@ -59,3 +59,17 @@ landing-page/
 └── script.js
 CRITICAL PRODUCTION CUE: Do not wrap your final file outputs in generic markdown formatting code fences when writing to disk. Generate the true files natively. You may include a sutil README.md file inside the folder (maximum of 5 lines) if needed for verification purposes.
 Begin implementation now.
+
+---
+
+## 📝 Capturas de pantalla
+
+### 1. Landing Page Generada por Primer Agente (Codex)
+*Modelo de lenguaje utilizado: Codex Core*
+
+![Inicio — Codex](./img/1%20-%20Inicio.png)
+
+### 2. Landing Page Generada por Segundo Agente (Claude Code)
+*Modelo de lenguaje utilizado: Claude 3.5 Sonnet (vía Claude Code)*
+
+![Inicio — Claude](./img/2%20-%20Inicio.png)
