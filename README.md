@@ -72,26 +72,36 @@ Begin implementation now.
 *Modelo de lenguaje utilizado: Codex Core*
 
 ## Inicio
+
  ![Inicio — Codex](./img/1%20-%20Inicio.png)
 ## Nosotros
+
  ![Nosotros — Codex](./img/1%20-%20Nosotros.png)
 ## Servicios
+
  ![Servicios — Codex](./img/1%20-%20Servicios.png)
 ## Testimonios
+
  ![Testimonios — Codex](./img/1%20-%20Testimonios.png)
 ## Contacto
+
  ![Contacto — Codex](./img/1%20-%20Contacto.png)
 
 ### 2. Landing Page Generada por Segundo Agente (Claude Code)
 *Modelo de lenguaje utilizado: Claude 3.5 Sonnet (vía Claude Code)*
 
 ## Inicio
+
  ![Inicio — Claude](./img/2%20-%20Inicio.png)
 ## Nosotros
+
  ![Nosotros — Codex](./img/2%20-%20Nosotros.png)
 ## Servicios
+
  ![Servicios — Codex](./img/2%20-%20Servicios.png)
 ## Testimonios
+
  ![Testimonios — Codex](./img/2%20-%20Testimonios.png)
 ## Contacto
+
  ![Contacto — Codex](./img/2%20-%20Contacto.png)
