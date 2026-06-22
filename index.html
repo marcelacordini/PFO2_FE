@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plataforma de Evaluación y Comparación de Agentes de IA — Portada</title>
+    <title>Prompt Engineering en Agentes de IA — IFTS N.° 29</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -14,15 +14,15 @@
            VARIABLES GLOBALES Y CONFIGURACIÓN DE DISEÑO
            ========================================================================== */
         :root {
-            --bg-main: #F8F9FA;
-            --bg-card: #FFFFFF;
+            --bg-main: #F3F2EE;          /* Fondo orgánico sutilmente cálido (estilo editorial/galería) */
+            --bg-card: #FFFFFF;          /* Blanco puro para que las tarjetas resalten limpiamente */
             --text-primary: #111827;
             --text-muted: #4B5563;
             --color-accent: #0284C7;
             --color-accent-hover: #0369A1;
             --color-codex: #059669;
             --color-claude: #D97706;
-            --border-color: #E5E7EB;
+            --border-color: rgba(17, 24, 39, 0.06);
             --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
@@ -79,15 +79,16 @@
             text-transform: uppercase;
             padding: 0.5rem 1.2rem;
             border-radius: 9999px;
-            margin-bottom: 1rem;
+            margin-bottom: 1.2rem;
+            border: 1px solid rgba(2, 132, 199, 0.15);
         }
 
         .academic-header h1 {
-            font-size: clamp(2rem, 4vw, 2.75rem);
+            font-size: clamp(2.2rem, 4.5vw, 3rem);
             font-weight: 700;
-            letter-spacing: -0.5px;
-            line-height: 1.2;
-            margin-bottom: 1rem;
+            letter-spacing: -0.75px;
+            line-height: 1.15;
+            margin-bottom: 1.2rem;
         }
 
         .student-meta-box {
@@ -96,10 +97,11 @@
             justify-content: center;
             gap: 1.5rem;
             margin-top: 0.5rem;
-            padding: 0.75rem 2rem;
+            padding: 0.85rem 2rem;
             background-color: var(--bg-card);
             border: 1px solid var(--border-color);
             border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.015);
         }
 
         .meta-item {
@@ -137,7 +139,7 @@
             color: inherit;
             position: relative;
             transition: var(--transition-smooth);
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px -1px rgba(0, 0, 0, 0.01);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.01), 0 2px 4px -1px rgba(0, 0, 0, 0.005);
         }
 
         .card-icon-wrapper {
@@ -191,8 +193,8 @@
             padding: 0.25rem 0.6rem;
             border-radius: 4px;
             margin-bottom: 1rem;
-            background-color: var(--bg-main);
-            border: 1px solid var(--border-color);
+            background-color: #F9FAFB;
+            border: 1px solid rgba(17, 24, 39, 0.05);
             color: var(--text-muted);
         }
 
@@ -221,8 +223,8 @@
         /* Estados Hover Reactivos */
         .access-card:hover {
             transform: translateY(-4px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.04), 0 10px 10px -5px rgba(0, 0, 0, 0.02);
-            border-color: rgba(17, 24, 39, 0.15);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.03), 0 10px 10px -5px rgba(0, 0, 0, 0.01);
+            border-color: rgba(17, 24, 39, 0.12);
         }
 
         .card-prompt:hover .card-action-footer { color: var(--color-accent); }
@@ -238,7 +240,7 @@
            PIE DE PÁGINA DE LA INTERFAZ
            ========================================================================== */
         .portal-footer {
-            border-top: 1px solid var(--border-soft);
+            border-top: 1px solid rgba(17, 24, 39, 0.04);
             padding: 2rem 1.5rem;
             text-align: center;
             background-color: var(--bg-card);
@@ -250,7 +252,7 @@
         }
 
         /* ==========================================================================
-           DISEÑO ADAPTABLE (RESPONSIVE BREKPOINTS)
+           DISEÑO ADAPTABLE (RESPONSIVE BREAKPOINTS)
            ========================================================================== */
         @media (max-width: 992px) {
             .portal-links-grid {
@@ -288,8 +290,8 @@
         <div class="portal-wrapper">
             
             <header class="academic-header">
-                <span class="project-badge">Evaluación de Ingeniería Frontend</span>
-                <h1>Interfaz de Acceso Unificada</h1>
+                <span class="project-badge">IFTS N.° 29 · DESARROLLO DE SISTEMAS WEB (FRONT END)</span>
+                <h1>Prompt Engineering en Agentes de IA</h1>
                 
                 <div class="student-meta-box">
                     <div class="meta-item">
