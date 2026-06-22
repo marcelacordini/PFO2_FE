@@ -64,20 +64,24 @@ Begin implementation now.
 
 ## 📝 Capturas de pantalla
 
+### PORTADA
+
+![Portada](./img/Portada.png)
+
 ### 1. Landing Page Generada por Primer Agente (Codex)
 *Modelo de lenguaje utilizado: Codex Core*
 
-![Inicio — Codex](./img/1%20-%20Inicio.png)
-![Nosotros — Codex](./img/1%20-%20Nosotros.png)
-![Servicios — Codex](./img/1%20-%20Servicios.png)
-![Testimonios — Codex](./img/1%20-%20Testimonios.png)
-![Contacto — Codex](./img/1%20-%20Contacto.png)
+## Inicio ![Inicio — Codex](./img/1%20-%20Inicio.png)
+## Nosotros ![Nosotros — Codex](./img/1%20-%20Nosotros.png)
+## Servicios ![Servicios — Codex](./img/1%20-%20Servicios.png)
+## Testimonios ![Testimonios — Codex](./img/1%20-%20Testimonios.png)
+## Contacto ![Contacto — Codex](./img/1%20-%20Contacto.png)
 
 ### 2. Landing Page Generada por Segundo Agente (Claude Code)
 *Modelo de lenguaje utilizado: Claude 3.5 Sonnet (vía Claude Code)*
 
-![Inicio — Claude](./img/2%20-%20Inicio.png)
-![Nosotros — Codex](./img/2%20-%20Nosotros.png)
-![Servicios — Codex](./img/2%20-%20Servicios.png)
-![Testimonios — Codex](./img/2%20-%20Testimonios.png)
-![Contacto — Codex](./img/2%20-%20Contacto.png)
+## Inicio ![Inicio — Claude](./img/2%20-%20Inicio.png)
+## Nosotros ![Nosotros — Codex](./img/2%20-%20Nosotros.png)
+## Servicios ![Servicios — Codex](./img/2%20-%20Servicios.png)
+## Testimonios ![Testimonios — Codex](./img/2%20-%20Testimonios.png)
+## Contacto ![Contacto — Codex](./img/2%20-%20Contacto.png)
