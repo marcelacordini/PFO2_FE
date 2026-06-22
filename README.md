@@ -59,7 +59,7 @@ landing-page/
 └── script.js
 CRITICAL PRODUCTION CUE: Do not wrap your final file outputs in generic markdown formatting code fences when writing to disk. Generate the true files natively. You may include a sutil README.md file inside the folder (maximum of 5 lines) if needed for verification purposes.
 Begin implementation now.
-
+```
 ---
 
 ## 📝 Capturas de pantalla
