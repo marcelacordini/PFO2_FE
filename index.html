@@ -1,50 +1,377 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Comparativa de Agentes IA — Landing Page</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="portada.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de Evaluación y Comparación de Agentes de IA — Portada</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <style>
+        /* ==========================================================================
+           VARIABLES GLOBALES Y CONFIGURACIÓN DE DISEÑO
+           ========================================================================== */
+        :root {
+            --bg-main: #F8F9FA;
+            --bg-card: #FFFFFF;
+            --text-primary: #111827;
+            --text-muted: #4B5563;
+            --color-accent: #0284C7;
+            --color-accent-hover: #0369A1;
+            --color-codex: #059669;
+            --color-claude: #D97706;
+            --border-color: #E5E7EB;
+            --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            background-color: var(--bg-main);
+            color: var(--text-primary);
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .main-content {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 4rem 1.5rem;
+        }
+
+        .portal-wrapper {
+            width: 100%;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        /* ==========================================================================
+           ENCABEZADO ACADÉMICO / METADATOS DEL ESTUDIANTE
+           ========================================================================== */
+        .academic-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .project-badge {
+            display: inline-block;
+            background-color: rgba(2, 132, 199, 0.08);
+            color: var(--color-accent);
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            padding: 0.5rem 1.2rem;
+            border-radius: 9999px;
+            margin-bottom: 1rem;
+        }
+
+        .academic-header h1 {
+            font-size: clamp(2rem, 4vw, 2.75rem);
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        .student-meta-box {
+            display: inline-flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 0.5rem;
+            padding: 0.75rem 2rem;
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+        }
+
+        .meta-item {
+            font-size: 0.87rem;
+            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .meta-item strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        /* ==========================================================================
+           GRID DE TARJETAS DE ACCESO DIRECTO
+           ========================================================================== */
+        .portal-links-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .access-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-decoration: none;
+            color: inherit;
+            position: relative;
+            transition: var(--transition-smooth);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px -1px rgba(0, 0, 0, 0.01);
+        }
+
+        .card-icon-wrapper {
+            width: 3.5rem;
+            height: 3.5rem;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.75rem;
+            margin-bottom: 2rem;
+            transition: var(--transition-smooth);
+        }
+
+        /* Estilos específicos para cada tipo de enlace requerido */
+        .card-prompt {
+            border-top: 4px solid var(--color-accent);
+        }
+        .card-prompt .card-icon-wrapper {
+            background-color: rgba(2, 132, 199, 0.06);
+            color: var(--color-accent);
+        }
+
+        .card-agent1 {
+            border-top: 4px solid var(--color-codex);
+        }
+        .card-agent1 .card-icon-wrapper {
+            background-color: rgba(5, 150, 105, 0.06);
+            color: var(--color-codex);
+        }
+
+        .card-agent2 {
+            border-top: 4px solid var(--color-claude);
+        }
+        .card-agent2 .card-icon-wrapper {
+            background-color: rgba(217, 119, 6, 0.06);
+            color: var(--color-claude);
+        }
+
+        .card-title-area h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            letter-spacing: -0.3px;
+        }
+
+        .card-model-tag {
+            display: inline-block;
+            font-size: 0.75rem;
+            font-weight: 500;
+            padding: 0.25rem 0.6rem;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+            background-color: var(--bg-main);
+            border: 1px solid var(--border-color);
+            color: var(--text-muted);
+        }
+
+        .card-description {
+            font-size: 0.9rem;
+            line-height: 1.55;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+        }
+
+        .card-action-footer {
+            display: flex;
+            align-items: center;
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            gap: 0.5rem;
+            transition: var(--transition-smooth);
+        }
+
+        .card-action-footer i {
+            font-size: 1.1rem;
+            transition: var(--transition-smooth);
+        }
+
+        /* Estados Hover Reactivos */
+        .access-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.04), 0 10px 10px -5px rgba(0, 0, 0, 0.02);
+            border-color: rgba(17, 24, 39, 0.15);
+        }
+
+        .card-prompt:hover .card-action-footer { color: var(--color-accent); }
+        .card-prompt:hover .card-action-footer i { transform: translateX(4px); }
+
+        .card-agent1:hover .card-action-footer { color: var(--color-codex); }
+        .card-agent1:hover .card-action-footer i { transform: translateX(4px); }
+
+        .card-agent2:hover .card-action-footer { color: var(--color-claude); }
+        .card-agent2:hover .card-action-footer i { transform: translateX(4px); }
+
+        /* ==========================================================================
+           PIE DE PÁGINA DE LA INTERFAZ
+           ========================================================================== */
+        .portal-footer {
+            border-top: 1px solid var(--border-soft);
+            padding: 2rem 1.5rem;
+            text-align: center;
+            background-color: var(--bg-card);
+        }
+
+        .portal-footer p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        /* ==========================================================================
+           DISEÑO ADAPTABLE (RESPONSIVE BREKPOINTS)
+           ========================================================================== */
+        @media (max-width: 992px) {
+            .portal-links-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 640px) {
+            .main-content {
+                padding: 2.5rem 1rem;
+            }
+            .academic-header {
+                margin-bottom: 2.5rem;
+            }
+            .portal-links-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            .student-meta-box {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.6rem;
+                padding: 1rem 1.5rem;
+                width: 100%;
+            }
+            .access-card {
+                padding: 2rem;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="portada">
-    <header class="portada__header">
-      <span class="portada__badge">Trabajo Práctico — Prompt Engineering</span>
-      <h1>Comparativa de Agentes de Desarrollo</h1>
-      <p class="portada__subtitle">
-        Mismo prompt inicial, dos agentes autónomos. Selecciona una opción para explorar el proyecto.
-      </p>
-    </header>
 
-    <nav class="portada__cards" aria-label="Accesos del proyecto">
-      <a href="prompt.html" class="card card--prompt">
-        <span class="card__number">01</span>
-        <h2>Prompt Utilizado</h2>
-        <p>Texto plano del prompt de alta precisión diseñado según guías oficiales de Anthropic y OpenAI.</p>
-        <span class="card__link">Ver prompt →</span>
-      </a>
+    <main class="main-content">
+        <div class="portal-wrapper">
+            
+            <header class="academic-header">
+                <span class="project-badge">Evaluación de Ingeniería Frontend</span>
+                <h1>Interfaz de Acceso Unificada</h1>
+                
+                <div class="student-meta-box">
+                    <div class="meta-item">
+                        <i class="ri-user-line"></i>
+                        <span>Estudiante: <strong>Marcela Cordini</strong></span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="ri-folder-open-line"></i>
+                        <span>Proyecto: <strong>Landing Page Comparison</strong></span>
+                    </div>
+                </div>
+            </header>
 
-      <a href="agent1-cursor/" class="card card--agent1">
-        <span class="card__number">02</span>
-        <h2>Agente 1 — Cursor</h2>
-        <p>Landing Page generada autónomamente por <strong>Cursor Agent</strong> con el modelo <strong>Composer</strong>.</p>
-        <span class="card__link">Ver landing →</span>
-      </a>
+            <div class="portal-links-grid">
+                
+                <a href="prompt.html" class="access-card card-prompt">
+                    <div>
+                        <div class="card-icon-wrapper">
+                            <i class="ri-terminal-box-line"></i>
+                        </div>
+                        <div class="card-title-area">
+                            <h2>Prompt Utilizado</h2>
+                            <span class="card-model-tag">Instrucción Maestra</span>
+                        </div>
+                        <p class="card-description">
+                            Acceso al texto plano del prompt exacto e hiper-optimizado inyectado de manera unificada a los dos agentes autónomos de desarrollo.
+                        </p>
+                    </div>
+                    <div class="card-action-footer">
+                        <span>Ver Prompt Plano</span>
+                        <i class="ri-arrow-right-line"></i>
+                    </div>
+                </a>
 
-      <a href="agent2-codex/" class="card card--agent2">
-        <span class="card__number">03</span>
-        <h2>Agente 2 — Codex (OpenAI)</h2>
-        <p>Landing Page generada autónomamente por <strong>Codex</strong> con el modelo <strong>gpt-5.3-codex</strong>.</p>
-        <span class="card__link">Ver landing →</span>
-      </a>
-    </nav>
+                <a href="agent1-codex/index.html" class="access-card card-agent1">
+                    <div>
+                        <div class="card-icon-wrapper">
+                            <i class="ri-robot-2-line"></i>
+                        </div>
+                        <div class="card-title-area">
+                            <h2>Primer Agente</h2>
+                            <span class="card-model-tag">Agent 1: Codex</span>
+                        </div>
+                        <p class="card-description">
+                            Explora el entorno completo y la landing page estructurada de forma autónoma por la solución basada en el agente de código Codex.
+                        </p>
+                    </div>
+                    <div class="card-action-footer">
+                        <span>Visualizar Landing</span>
+                        <i class="ri-arrow-right-line"></i>
+                    </div>
+                </a>
 
-    <footer class="portada__footer">
-      <p>Lumina Studio — Proyecto de comparación de capacidad de resolución autónoma</p>
+                <a href="agent2-claude/index.html" class="access-card card-agent2">
+                    <div>
+                        <div class="card-icon-wrapper">
+                            <i class="ri-sparkling-2-line"></i>
+                        </div>
+                        <div class="card-title-area">
+                            <h2>Segundo Agente</h2>
+                            <span class="card-model-tag">Agent 2: Claude Code</span>
+                        </div>
+                        <p class="card-description">
+                            Explora el ecosistema visual, componentes semánticos y desarrollo web ejecutado interactivamente a través del agente Claude Code.
+                        </p>
+                    </div>
+                    <div class="card-action-footer">
+                        <span>Visualizar Landing</span>
+                        <i class="ri-arrow-right-line"></i>
+                    </div>
+                </a>
+
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="portal-footer">
+        <div class="container">
+            <p>&copy; 2026 Ecosistema de Comparación Multiaquitectura. Despliegue unificado listo para distribución en entornos productivos.</p>
+        </div>
     </footer>
-  </div>
+
 </body>
 </html>

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lumina Studio — Agencia Creativa Digital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="#inicio" class="logo">Lumina Studio</a>
+      <nav class="nav" id="nav" aria-label="Navegación principal">
+        <ul class="nav__list">
+          <li><a href="#inicio" class="nav__link">Inicio</a></li>
+          <li><a href="#nosotros" class="nav__link">Nosotros</a></li>
+          <li><a href="#servicios" class="nav__link">Servicios</a></li>
+          <li><a href="#testimonios" class="nav__link">Testimonios</a></li>
+          <li><a href="#contacto" class="nav__link nav__link--cta">Iniciar proyecto</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span class="hamburger__bar"></span>
+        <span class="hamburger__bar"></span>
+        <span class="hamburger__bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio">
+      <div class="hero__content">
+        <p class="hero__eyebrow">Agencia creativa digital</p>
+        <h1 class="hero__title">Transformamos visiones en marcas de <em>impacto</em></h1>
+        <p class="hero__subtitle">Estrategia, diseño y crecimiento digital para startups que no temen desafiar el status quo. Construimos presencias que perduran.</p>
+        <div class="hero__actions">
+          <a href="#contacto" class="btn btn--primary">Inicia tu proyecto</a>
+          <a href="#servicios" class="btn btn--ghost">Ver servicios</a>
+        </div>
+        <div class="hero__meta">
+          <div class="hero__stat">
+            <strong>150+</strong>
+            <span>Proyectos</span>
+          </div>
+          <div class="hero__divider"></div>
+          <div class="hero__stat">
+            <strong>8</strong>
+            <span>Años de trayectoria</span>
+          </div>
+          <div class="hero__divider"></div>
+          <div class="hero__stat">
+            <strong>98%</strong>
+            <span>Clientes satisfechos</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__visual">
+        <!-- Sophisticated magazine-cover card -->
+        <div class="abstract-canvas">
+          <div class="canvas-image-bg" style="background-image: url('../img/imagen.png');"></div>
+          <div class="geometric-overlay-card">
+            <span class="canvas-tag">EDICIÓN 2026</span>
+            <div class="canvas-line"></div>
+          </div>
+        </div>
+      </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about" id="nosotros">
+      <div class="container">
+        <div class="about__grid">
+          <div class="about__text">
+            <p class="section-eyebrow">Quiénes somos</p>
+            <h2 class="section-title">Diseño con propósito, estrategia con criterio</h2>
+            <p>Lumina Studio nació de una convicción simple pero poderosa: que el diseño de calidad no debería ser exclusivo de las grandes corporaciones. Desde 2016, acompañamos a startups en etapa temprana y empresas en crecimiento a construir marcas que comunican con claridad, generan confianza y convierten visitantes en clientes comprometidos.</p>
+            <p>Nuestro equipo interdisciplinario reúne diseñadores, estrategas de marca, desarrolladores frontend y especialistas en performance digital. No trabajamos por proyectos aislados: construimos relaciones de largo plazo con fundadores que quieren crecer de manera inteligente y sostenida, con una identidad visual que escala junto a sus ambiciones.</p>
+            <a href="#contacto" class="btn btn--primary" style="margin-top:8px;">Conversemos <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="about__side">
+            <div class="about__metric">
+              <strong class="metric__number">150+</strong>
+              <span class="metric__label">proyectos entregados</span>
+              <p class="metric__desc">en 12 países de América Latina y Europa</p>
+            </div>
+            <div class="about__values">
+              <div class="value-item">
+                <div class="value-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="#006D5B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <div>
+                  <strong>Claridad ante todo</strong>
+                  <p>Cada decisión de diseño tiene una razón de ser.</p>
+                </div>
+              </div>
+              <div class="value-item">
+                <div class="value-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke="#006D5B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <div>
+                  <strong>Velocidad sin sacrificar calidad</strong>
+                  <p>Procesos probados que acortan tiempos sin comprometer el resultado.</p>
+                </div>
+              </div>
+              <div class="value-item">
+                <div class="value-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="#006D5B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <div>
+                  <strong>Colaboración real</strong>
+                  <p>Tu equipo y el nuestro, trabajando como uno solo.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="services" id="servicios">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Lo que hacemos</p>
+          <h2 class="section-title">Servicios diseñados<br />para escalar</h2>
+          <p class="section-subtitle">Cuatro disciplinas que se potencian entre sí para construir una presencia digital coherente y de alto impacto.</p>
+        </div>
+        <div class="services__grid">
+
+          <div class="service-card">
+            <div class="service-card__icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="#006D5B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Identidad de Marca</h3>
+            <p>Desarrollamos sistemas de identidad visual completos: logotipo, paleta cromática, tipografía, voz de marca y guías de uso. Una marca con criterio que se reconoce al instante.</p>
+            <span class="service-card__tag">Branding</span>
+          </div>
+
+          <div class="service-card">
+            <div class="service-card__icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" ry="2" stroke="#006D5B" stroke-width="1.8"/><path d="M8 21h8M12 17v4" stroke="#006D5B" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Diseño Web & UX</h3>
+            <p>Sitios web con arquitectura de información clara, experiencias de usuario intuitivas y un diseño que convierte. Desde landing pages hasta productos digitales complejos.</p>
+            <span class="service-card__tag">Diseño digital</span>
+          </div>
+
+          <div class="service-card">
+            <div class="service-card__icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12" stroke="#006D5B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Marketing Digital</h3>
+            <p>Estrategias de crecimiento basadas en datos: SEO, campañas de adquisición, email marketing y automatizaciones que trabajan mientras vos dormís. Sin vanity metrics.</p>
+            <span class="service-card__tag">Crecimiento</span>
+          </div>
+
+          <div class="service-card">
+            <div class="service-card__icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z" stroke="#006D5B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Desarrollo Frontend</h3>
+            <p>Implementación técnica de alto estándar: código limpio, performance optimizado, accesibilidad WCAG y velocidad de carga que no sacrifica la experiencia visual.</p>
+            <span class="service-card__tag">Desarrollo</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="testimonials" id="testimonios">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Lo que dicen nuestros clientes</p>
+          <h2 class="section-title">Resultados que hablan por sí solos</h2>
+        </div>
+        <div class="testimonials__grid">
+
+          <div class="testimonial-card">
+            <div class="testimonial-card__stars" aria-label="5 estrellas">★★★★★</div>
+            <blockquote>"Lumina transformó por completo la manera en que presentamos nuestro producto. En tres meses de trabajo vimos un incremento del 40% en conversiones desde la landing. No es magia, es criterio de diseño."</blockquote>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar" aria-hidden="true">SR</div>
+              <div class="testimonial-card__info">
+                <strong>Sofía Rodríguez</strong>
+                <span>Co-fundadora · Nómada App</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-card__stars" aria-label="5 estrellas">★★★★★</div>
+            <blockquote>"Lo que más valoro es que el equipo entiende de negocio, no solo de diseño. Antes de mostrar cualquier propuesta visual, entendieron nuestra propuesta de valor mejor que algunos de nuestros socios."</blockquote>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar" aria-hidden="true">MF</div>
+              <div class="testimonial-card__info">
+                <strong>Mateo Fernández</strong>
+                <span>CEO · ClearPath Ventures</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-card__stars" aria-label="5 estrellas">★★★★★</div>
+            <blockquote>"Lanzamos con una identidad sólida desde el día uno. Eso nos abrió puertas que de otra manera hubieran tardado años. Los inversores confían antes de escucharte cuando tu marca comunica seriedad."</blockquote>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar" aria-hidden="true">LG</div>
+              <div class="testimonial-card__info">
+                <strong>Laura Gutiérrez</strong>
+                <span>Founder · Helio Finance</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact" id="contacto">
+      <div class="container">
+        <div class="contact__grid">
+          <div class="contact__info">
+            <p class="section-eyebrow">Hablemos</p>
+            <h2 class="section-title">Tu próximo proyecto comienza con una conversación</h2>
+            <p>Contanos en qué etapa está tu startup, cuáles son tus objetivos y qué te trajo hasta acá. Respondemos en menos de 24 horas hábiles.</p>
+            <div class="contact__details">
+              <div class="contact__detail-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="#006D5B" stroke-width="1.8"/><polyline points="22,6 12,13 2,6" stroke="#006D5B" stroke-width="1.8" stroke-linecap="round"/></svg>
+                <span>hola@luminastudio.com</span>
+              </div>
+              <div class="contact__detail-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" stroke="#006D5B" stroke-width="1.8"/><circle cx="12" cy="10" r="3" stroke="#006D5B" stroke-width="1.8"/></svg>
+                <span>Buenos Aires, Argentina · Trabajo remoto global</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact__form-wrapper">
+            <form class="contact__form" id="contactForm" novalidate>
+              <div id="formSuccess" class="form__success" role="alert" aria-live="polite" hidden>
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="#006D5B" stroke-width="2" stroke-linecap="round"/><polyline points="22 4 12 14.01 9 11.01" stroke="#006D5B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <div>
+                  <strong>¡Mensaje recibido!</strong>
+                  <p>Nos pondremos en contacto dentro de las próximas 24 horas hábiles. Gracias por confiar en Lumina Studio.</p>
+                </div>
+              </div>
+
+              <div id="formFields">
+                <div class="form__row">
+                  <div class="form__group">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="María García" autocomplete="name" required />
+                    <span class="form__error" id="nombreError"></span>
+                  </div>
+                  <div class="form__group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="maria@startup.com" autocomplete="email" required />
+                    <span class="form__error" id="emailError"></span>
+                  </div>
+                </div>
+                <div class="form__group">
+                  <label for="empresa">Empresa o proyecto <span class="form__optional">(opcional)</span></label>
+                  <input type="text" id="empresa" name="empresa" placeholder="Mi Startup SRL" autocomplete="organization" />
+                </div>
+                <div class="form__group">
+                  <label for="mensaje">Contanos sobre tu proyecto</label>
+                  <textarea id="mensaje" name="mensaje" placeholder="¿En qué etapa está tu startup? ¿Qué necesitás construir o mejorar? ¿Cuál es tu mayor desafío hoy?" rows="5" required></textarea>
+                  <span class="form__error" id="mensajeError"></span>
+                </div>
+                <button type="submit" class="btn btn--primary btn--full">Enviar mensaje <span aria-hidden="true">→</span></button>
+                <p class="form__legal">Al enviar este formulario aceptás nuestra <a href="#">Política de Privacidad</a>. Sin spam, prometido.</p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#inicio" class="logo logo--light">Lumina Studio</a>
+          <p>Diseño con propósito para startups con ambición. Buenos Aires, Argentina.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#testimonios">Testimonios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Política de Privacidad</a></li>
+            <li><a href="#">Términos de Uso</a></li>
+            <li><a href="#">Aviso de Cookies</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Redes</h4>
+          <div class="footer__socials">
+            <a href="#" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="1.8"/></svg>
+              LinkedIn
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="currentColor" stroke-width="1"/></svg>
+              Instagram
+            </a>
+            <a href="#" aria-label="X / Twitter">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+              X / Twitter
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2026 Lumina Studio. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
