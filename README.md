@@ -14,7 +14,7 @@ Este proyecto consiste en un entorno de evaluación comparativa donde se analiza
 ## 🚀 Despliegue Unificado (Deploy)
 El proyecto se encuentra integrado y desplegado en producción bajo un único punto de acceso en Vercel. La portada inicial distribuye las rutas hacia el prompt maestro y hacia los dos desarrollos independientes:
 
-🔗 **[Enlace al Deploy Unificado en Vercel](AGREGAR_AQUÍ_TU_LINK_DE_VERCEL)**
+🔗 **[Enlace al Deploy Unificado en Vercel] https://pfo-2-fe.vercel.app/**
 
 ---
 
