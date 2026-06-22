@@ -4,8 +4,8 @@
     { "src": "**/*", "use": "@vercel/static" }
   ],
   "routes": [
-    { "src": "/agent1-cursor", "dest": "/agent1-cursor/index.html" },
-    { "src": "/agent2-codex", "dest": "/agent2-codex/index.html" },
+    { "src": "/agent1-codex", "dest": "/agent1-codex/index.html" },
+    { "src": "/agent2-claude", "dest": "/agent2-claude/index.html" },
     { "src": "/prompt", "dest": "/prompt.html" },
     { "src": "/(.*)", "dest": "/$1" }
   ]
